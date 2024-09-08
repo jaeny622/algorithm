@@ -11,7 +11,5 @@ function solution(arr) {
      if(answer.findIndex((item) => item === 2) === -1) lastIdx = idx; 
     }    
     
-    console.log(firstIdx, lastIdx)
-    
     return firstIdx === -1 ? [-1] : arr.slice(firstIdx,lastIdx+1);
 }
